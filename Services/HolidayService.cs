@@ -114,7 +114,7 @@ namespace QuanLyNgayLe.Services
                     holiday.Name,
                     Date = holiday.Date.ToString("yyyy-MM-dd"),
                     holiday.Description,
-                    holiday.Enabled,
+                    Enabled = holiday.Enabled ? 1 : 0,
                     holiday.NotificationDaysBefore,
                     CreatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"),
                     UpdatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
@@ -143,7 +143,7 @@ namespace QuanLyNgayLe.Services
                     holiday.Name,
                     Date = holiday.Date.ToString("yyyy-MM-dd"),
                     holiday.Description,
-                    holiday.Enabled,
+                    Enabled = holiday.Enabled ? 1 : 0,
                     holiday.NotificationDaysBefore,
                     UpdatedAt = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
                 });
