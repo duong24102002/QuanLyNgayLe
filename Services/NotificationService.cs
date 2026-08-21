@@ -7,11 +7,8 @@ namespace QuanLyNgayLe.Services
 {
     public class NotificationService
     {
-        private SystemSoundPlayer _soundPlayer;
-
         public NotificationService()
         {
-            _soundPlayer = new SystemSoundPlayer();
         }
 
         public void ShowNotification(Holiday holiday)
@@ -65,27 +62,6 @@ namespace QuanLyNgayLe.Services
 
             MessageBox.Show(message, $"🔔 Nhắc nhở ngày lễ", 
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        public void SendEmailNotification(Holiday holiday, string recipientEmail)
-        {
-            // This would require email configuration
-            // Placeholder for future implementation
-            try
-            {
-                LogNotification(holiday, "Email");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi khi gửi email: {ex.Message}", "Lỗi", 
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void LogNotification(Holiday holiday, string type)
-        {
-            // Log notification for tracking purposes
-            Console.WriteLine($"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Thông báo {type}: {holiday.Name}");
         }
     }
 }
