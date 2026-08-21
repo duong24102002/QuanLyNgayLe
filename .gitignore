@@ -1,0 +1,59 @@
+# Quản Lý Ngày Lễ - Holiday Reminder
+
+Ứng dụng Windows Forms quản lý ngày lễ với tính năng nhắc nhở tự động
+
+## Tính Năng Chính
+
+- 📅 Quản lý đầy đủ ngày lễ (Thêm/Sửa/Xóa)
+- 🔔 Thông báo tự động với âm thanh
+- 💾 Lưu trữ dữ liệu trong SQLite
+- 📊 Hiển thị danh sách với trạng thái
+- ⚙️ Cấu hình thời gian nhắc nhở
+
+## Yêu Cầu Hệ Thống
+
+- Windows 10 / Windows 11
+- .NET 6.0 Runtime
+- RAM: 512MB trở lên
+
+## Cài Đặt
+
+1. Clone repository:
+   ```bash
+   git clone https://github.com/duong24102002/QuanLyNgayLe.git
+   ```
+
+2. Mở trong Visual Studio 2022
+
+3. Build và Run (F5)
+
+## Sử Dụng
+
+1. **Khởi động ứng dụng**
+2. **Thêm ngày lễ**: Nhấn "➕ Thêm" và điền thông tin
+3. **Bật thông báo**: Đánh dấu "🔔 Bật thông báo"
+4. **Chỉnh sửa**: Chọn ngày lễ → Nhấn "✏️ Sửa"
+5. **Xóa**: Chọn ngày lễ → Nhấn "🗑️ Xóa"
+
+## Dữ Liệu
+
+Dữ liệu được lưu tại:
+```
+C:\Users\[Username]\AppData\Roaming\QuanLyNgayLe\holidays.db
+```
+
+## Công Nghệ Sử Dụng
+
+- **Language**: C#
+- **Framework**: .NET 6.0
+- **Database**: SQLite
+- **ORM**: Dapper
+- **UI**: Windows Forms
+
+## Góp Ý & Báo Lỗi
+
+Vui lòng tạo Issues trên GitHub
+
+## License
+
+MIT License
